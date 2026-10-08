@@ -6,7 +6,7 @@ A JWT carries claims (user, role) plus a signature. If the server verifies the s
 <<<<<<< HEAD
 ![Labs](https://img.shields.io/badge/labs%20solved-7-brightgreen)
 =======
-![Labs](https://img.shields.io/badge/labs%20solved-8-brightgreen)
+![Labs](https://img.shields.io/badge/labs%20solved-7-brightgreen)
 >>>>>>> 1cde4da (docs(jwt): fix README formatting and add lab 08)
 ![Topic](https://img.shields.io/badge/topic-jwt-blue)
 ![Level](https://img.shields.io/badge/level-apprentice%20to%20expert-orange)
@@ -43,7 +43,7 @@ Each part is Base64URL-encoded. Decoding is easy; the security comes only from t
 <<<<<<< HEAD
 | Algorithm confusion | RS256 token verified as HS256 using the public key | 07 |
 =======
-| Algorithm confusion | RS256 token verified as HS256 using the public key | 07, 08 |
+| Algorithm confusion | RS256 token verified as HS256 using the public key | 07 |
 >>>>>>> 1cde4da (docs(jwt): fix README formatting and add lab 08)
 
 ## Lab index
@@ -59,8 +59,9 @@ Each part is Base64URL-encoded. Decoding is easy; the security comes only from t
 | 07 | [Algorithm confusion](lab-07-algorithm-confusion.md) | Expert | Sign with the public key as an HMAC secret | JWT Editor |
 <<<<<<< HEAD
 =======
-| 08 | [Algorithm confusion, no exposed key](lab-08-algorithm-confusion-no-exposed-key.md) | Expert | Derive the public key from two tokens, then sign as HMAC | JWT Editor, sig2n |
 >>>>>>> 1cde4da (docs(jwt): fix README formatting and add lab 08)
+
+Concept notes: [Algorithm confusion](algorithm-confusion-concepts.md)
 
 ## Testing checklist
 
@@ -72,7 +73,6 @@ Each part is Base64URL-encoded. Decoding is easy; the security comes only from t
 - [ ] Try swapping RS256 for HS256 using the public key
 <<<<<<< HEAD
 =======
-- [ ] If no public key is exposed, derive it from two tokens
 >>>>>>> 1cde4da (docs(jwt): fix README formatting and add lab 08)
 - [ ] Check `exp`, `iss` and `aud` are enforced
 
