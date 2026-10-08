@@ -3,11 +3,7 @@
 Notes and lab write-ups for PortSwigger's **JWT attacks** topic.
 A JWT carries claims (user, role) plus a signature. If the server verifies the signature badly, an attacker can forge a token and act as any user.
 
-<<<<<<< HEAD
 ![Labs](https://img.shields.io/badge/labs%20solved-7-brightgreen)
-=======
-![Labs](https://img.shields.io/badge/labs%20solved-7-brightgreen)
->>>>>>> 1cde4da (docs(jwt): fix README formatting and add lab 08)
 ![Topic](https://img.shields.io/badge/topic-jwt-blue)
 ![Level](https://img.shields.io/badge/level-apprentice%20to%20expert-orange)
 
@@ -40,11 +36,7 @@ Each part is Base64URL-encoded. Decoding is easy; the security comes only from t
 | Weak verification | `alg: none` accepted | 02 |
 | Weak secret | Signing key can be brute-forced | 03 |
 | Header injection | Attacker controls `jwk`, `jku` or `kid` | 04, 05, 06 |
-<<<<<<< HEAD
 | Algorithm confusion | RS256 token verified as HS256 using the public key | 07 |
-=======
-| Algorithm confusion | RS256 token verified as HS256 using the public key | 07 |
->>>>>>> 1cde4da (docs(jwt): fix README formatting and add lab 08)
 
 ## Lab index
 
@@ -57,9 +49,6 @@ Each part is Base64URL-encoded. Decoding is easy; the security comes only from t
 | 05 | [JKU header injection](lab-05-jku-header-injection.md) | Practitioner | Point `jku` to your hosted key set | JWT Editor, exploit server |
 | 06 | [kid header path traversal](lab-06-kid-header-path-traversal.md) | Practitioner | Make `kid` load a known file as the key | JWT Editor |
 | 07 | [Algorithm confusion](lab-07-algorithm-confusion.md) | Expert | Sign with the public key as an HMAC secret | JWT Editor |
-<<<<<<< HEAD
-=======
->>>>>>> 1cde4da (docs(jwt): fix README formatting and add lab 08)
 
 Concept notes: [Algorithm confusion](algorithm-confusion-concepts.md)
 
@@ -71,9 +60,6 @@ Concept notes: [Algorithm confusion](algorithm-confusion-concepts.md)
 - [ ] Try cracking the secret with a common wordlist
 - [ ] Test header injection: `jwk`, `jku`, `kid`
 - [ ] Try swapping RS256 for HS256 using the public key
-<<<<<<< HEAD
-=======
->>>>>>> 1cde4da (docs(jwt): fix README formatting and add lab 08)
 - [ ] Check `exp`, `iss` and `aud` are enforced
 
 ## Common mitigations
@@ -90,8 +76,4 @@ Concept notes: [Algorithm confusion](algorithm-confusion-concepts.md)
 Burp Suite, JWT Editor extension, hashcat, jwt.io (decoding only; never paste real tokens)
 
 ---
-<<<<<<< HEAD
 *Educational notes. All testing was done only on PortSwigger's official labs.*
-=======
-*Educational notes. All testing was done only on PortSwigger's official labs.*
->>>>>>> 1cde4da (docs(jwt): fix README formatting and add lab 08)
